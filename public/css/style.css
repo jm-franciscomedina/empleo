@@ -1,0 +1,60 @@
+.top-nav-collapse{
+	background-color: #0097a7;
+}
+
+.carousel-caption > .info{
+	margin-bottom:10rem;
+}
+
+.carousel-caption > .info1{
+	margin-bottom:8rem;
+}
+
+.fondo-foot{
+	background-image: url("../img/word_map.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cuadro{
+    height:250px;
+    max-height:250px;
+}
+
+.cuadro .card-body .texto{
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 43px;
+    /* line-height: 1; */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.cuadro .card-header{
+    padding:0.3rem;
+}
+
+.cuadro .card-footer{
+    padding:0.5rem;
+}
+
+.cuadro  .titulo{
+    color: #fff;
+    font-weight:bold;
+    text-transform: capitalize;
+}
+
+.paginacion{
+    text-align: center;
+    margin:auto;
+}
