@@ -65,6 +65,7 @@
                 		{!!$errors->first('tags', '<span class="help-block">:message</span>')!!}
                 	</div>
                     <input type="hidden" name="users" value="{{ Auth::user()->id }}">
+                    <input type="hidden" name="status" value="PUBLISHED">
                     <div class="form-group">
                      	<div class="col-lg-offset-2 col-lg-10">
                            <button class="btn btn-sm btn-success" type="submit">Guardar</button>

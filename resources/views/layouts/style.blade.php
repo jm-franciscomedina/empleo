@@ -10,13 +10,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- inicio de todos los estilos de la pagina -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/1bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
 
     @stack('styles')
 
     <link href="{{asset('css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/1style.css')}}" rel="stylesheet">
 
     <!-- fin de todos los estilos de la pagina --> 
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
@@ -221,8 +221,8 @@
         </div>
 
     <!-- aca estan todos los javascript y plugins de la pagina -->
-    <script src="{{asset('js/jquery-3.1.1.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/1jquery-3.1.1.min.js')}}"></script>
+    <script src="{{asset('js/1bootstrap.min.js')}}"></script>
     <script src="{{asset('js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
     <script src="{{asset('js/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
     <!--  plugin javascript -->

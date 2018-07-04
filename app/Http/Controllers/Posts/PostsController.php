@@ -19,7 +19,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts= Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(3);
+        $posts= Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->get();
         return view('admin.posts.index', compact('posts'));
     }
 
@@ -63,6 +63,7 @@ class PostsController extends Controller
         $post->published_at = $request->has('published_at') ? Carbon::parse($request->get('published_at')): null;
         $post->category_id = $request->get('category');
         $post->user_id = $request->get('users');
+        $post->status = $request->get('status');
         $post->save();
         $post->tags()->attach($request->get('tags'));
         //$post->users()->attach($request->get('users')); 

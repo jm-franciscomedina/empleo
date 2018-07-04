@@ -19,6 +19,7 @@ class PagesController extends Controller
         
         $posts= Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
         return view('welcome', compact('posts'));
+        
     }
 
     /**
